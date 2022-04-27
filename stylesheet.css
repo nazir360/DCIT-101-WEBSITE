@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.banner {
+    width: 100%;
+    height: 50vh;
+    background: url(https://th.bing.com/th/id/OIP.Ts9d_Hv4dMz1u0M3VhiUMwHaD0?w=348&h=179&c=7&r=0&o=5&pid=1.7.jpg);
+    background-size: cover;
+    background-position: center;
+    border-bottom: #000;
+}
+
+.navbar {
+    width: 85%;
+    margin: 0%;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 120px;
+    cursor: pointer;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: all 0.5s;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
+.content {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translate();
+    text-align: center;
+    color: #fff;
+    background-color: #000;
+}
+
+.content h1 {
+    font-size: 70px;
+    margin-top: 80px;
+}
+
+.content p {
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+.content .btns {
+    margin-top: 20px;
+}
+
+.content .btns button {
+    height: 55px;
+    width: 170px;
+    border-radius: 5px;
+    border: none;
+    margin: 0 10px;
+    border: 2px solid #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0 10px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.content .btns button:first-child {
+    color: #fff;
+    background: none;
+}
+
+.content .btns button:first-child:hover {
+    background: #fff;
+    color: #000;
+}
+
+.content.bars {
+    width: 100%;
+    height: 100vh;
+    background: url(https://th.bing.com/th/id/OIP.kizzf_NL0iafprYeTxLFywHaFj?w=249&h=186&c=7&r=0&o=5&pid=1.7.jpg);
+    background-size: cover;
+    background-position: center
+}
+
+.content.bars h1 {
+    font-size: larger;
+    margin-top: 100px;
+}
+
+.content.bars p {
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
